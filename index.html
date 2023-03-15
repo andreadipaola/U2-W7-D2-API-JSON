@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>API and JSON</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body class="vh-100 d-flex justify-content-center align-items-center">
+    <div class="container border rounded shadow p-5" style="width: 600px">
+      <div class="d-flex justify-content-center align-items-center">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <div class="form-outline">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                value=""
+                required
+              />
+              <label for="name" class="form-label">Nome</label>
+              <div class="invalid-feedback">Inserisci un Nome</div>
+              <div class="valid-feedback">Perfetto!</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-outline">
+              <input
+                type="text"
+                class="form-control"
+                id="surname"
+                value=""
+                required
+              />
+              <label for="surname" class="form-label">Cognome</label>
+              <div class="invalid-feedback">Inserisci un Nome</div>
+              <div class="valid-feedback">Perfetto!</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-group form-outline">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <label for="username" class="form-label">Username</label>
+              <div class="invalid-feedback">manca un Username.</div>
+              <div class="valid-feedback">Perfetto!</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline">
+              <input type="text" class="form-control" id="city" required />
+              <label for="city" class="form-label">Città</label>
+              <div class="invalid-feedback">Inserisci una Città</div>
+              <div class="valid-feedback">Perfetto!</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline">
+              <input type="text" class="form-control" id="zipcode" required />
+              <label for="zipcode" class="form-label">CAP</label>
+              <div class="invalid-feedback">Inserisci un CAP</div>
+              <div class="valid-feedback">Perfetto!</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck"
+                >Accetto termini e condizioni</label
+              >
+              <div class="invalid-feedback">Devi accettare per proseguire.</div>
+            </div>
+          </div>
+          <div class="col-2 me-3">
+            <button id="save" class="btn btn-primary">SALVA</button>
+          </div>
+          <div class="col-2">
+            <button id="delete" class="btn btn-secondary">ELIMINA</button>
+          </div>
+          <div class="d-flex align-items-center mt-5">
+            <span>Il tempo trascorso è: </span>
+            <span id="counter"></span>
+            <span>s</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script type="text/javascript"></script>
+    <script src="js/script2.js"></script>
+  </body>
+</html>
